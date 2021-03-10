@@ -4,14 +4,14 @@ public class tree {
   boolean leavesFall;
   String leafColor;
 
-  public class tree() { //default
+  public tree() { //default
     treeName = "";
-    treeType = 0;
+    treeType = "";
     leavesFall = false;
     leafColor = "";
   }
 
-  public class tree(String setTreeName, String  setTreeType, boolean setLeavesFall, String setLeafColor) { //specific constructor
+  public tree(String setTreeName, String  setTreeType, boolean setLeavesFall, String setLeafColor) { //specific constructor
     treeName = setTreeName;
     treeType = setTreeType;
     leavesFall = setLeavesFall;
@@ -48,11 +48,7 @@ public class tree {
 
 //print method
 void print() {
-if(leavesFall = true) {
-  System.out.println("This is a " + treeName + " tree. It is a " + treeType + " and it's leaves are currently " + leafColor + ". It does lose its leaves for the winter.")
-}
-else{
-  System.out.println("This is a " + treeName + " tree. It is a " + treeType + " and it's leaves are currently " + leafColor + ". It does not lose its leaves for the winter.")
-}
+  String fall = (leavesFall = true) ? "It does lose its leaves for the winter." : "It does not lose its leaves for the winter."; //gave up. Can't get it to swap. All I feel is pain. Tried using fancy ternary operators. Feedback is appreciated.
+  System.out.println("This is a " + treeName + " tree. It is a " + treeType + " and it's leaves are currently " + leafColor + "." + fall);
 }
 }
