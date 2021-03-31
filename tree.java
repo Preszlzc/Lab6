@@ -48,7 +48,7 @@ public class tree {
 
 //print method
 void print() {
-  String fall = (leavesFall = true) ? "It does lose its leaves for the winter." : "It does not lose its leaves for the winter."; //gave up. Can't get it to swap. All I feel is pain. Tried using fancy ternary operators. Feedback is appreciated.
+  String fall = (leavesFall == true) ? "It does lose its leaves for the winter." : "It does not lose its leaves for the winter."; //gave up. Can't get it to swap. All I feel is pain. Tried using fancy ternary operators. Feedback is appreciated.
   System.out.println("This is a " + treeName + " tree. It is a " + treeType + " and it's leaves are currently " + leafColor + "." + fall);
 }
 }
